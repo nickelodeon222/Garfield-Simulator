@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="favicon.ico"></link>
+        <title>garfield simulator</title>
+        <style>
+            .mainDiv {
+                align-items: center;
+                position: absolute;
+                top: 60%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+
+            body {
+                background-image: url('lasanga.png');
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            .text {
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="mainDiv">
+            <h3 class='text' id="lasangaCount">YOU HAVE 0 LASANGA</h3>
+
+            <h4 class='text' id='lpsCounter'>0 lasanga per second</h3>
+
+            <h3 class='text' id='eatenLasangaCount'>GARFIELD HAS EATEN 0 LASAGNA</h3>
+
+            <h4 class='text' id='lepsCount'>GARFIELD EATS 0 OF YOUR LASANGA PER SECOND</h4>
+
+            <img width="271" height="318" src="garf.jfif" alt="garfield">
+            <br>
+            <button id="feedGarfield">FEED GARFIELD</button>
+
+            <ul>
+                 <li>
+                    <button id="lasangaTreeButton">lasanga tree, cost: 10 lasanga, amount: 0, lps: 0.5</button>
+                </li>
+
+                <li>
+                    <button id="lasangaFarmButton" hidden>lasanga farm, cost: 100 lasanga, amount: 0, lps: 2</button>
+                </li>
+
+                <li>
+                    <button id='importButton' hidden>import lasanga, cost: 500 lasanga, amount: 0, lps: 5</button>
+                </li>
+
+                <li>
+                    <button id="labourButton" hidden>odie labour, cost: 1000 lasanga, amount: 0, lps: 10</button>
+                </li>
+
+                <li>
+                    <button id="jonButton" hidden>jon labour, cost: 5000 lasanga, amount 0, lps: 50</button>
+                </li>
+
+                <li>
+                    <button id='nermalButton' hidden>kill nermal, cost: 10000 lasanga, amount 0, lps: 100</button>
+                </li>
+
+                <li>
+                    <button id='ballsButton' hidden>balls, cost: 50000 lasanga, amount 0, lps: 500</button>
+                </li>
+                
+            </ul>
+
+            <button type='button' id='saveButton'>SAVE</button>
+
+            <button type="button" id='resetButton'>DELETE SAVE</button>
+        </div>
+
+        <script src="lib/howler.js"></script>
+        <script src="pageinit.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
